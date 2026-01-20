@@ -1,6 +1,6 @@
 # Optional: Resources
 
-We'll introduce a lot of powerful tools. 
+We'll introduce a lot of powerful tools.
 Find the ones that interest you and explore them further.
 
 ## Jupyter Notebook Resources
@@ -20,19 +20,19 @@ Find the ones that interest you and explore them further.
 
 ## Numpy and pandas
 
-These are key libraries for data analysis. 
-Pandas is built on NumPy arrays. 
-Pandas has some new competitors in big data - you might check out polars. 
+These are key libraries for data analysis.
+Pandas is built on NumPy arrays.
+Pandas has some new competitors in big data - you might check out polars.
 
 ## Matplotlib
 
-Matplotlib is the core plotting library for Python. 
-If you enjoy data visualization and want to excel, spend some time understanding this key library. 
+Matplotlib is the core plotting library for Python.
+If you enjoy data visualization and want to excel, spend some time understanding this key library.
 
 ## Seaborn Charts
 
 Do a search for Seaborn Gallery to see examples of charts you can create with Seaborn.
-Seaborn is a Python data visualization library based on matplotlib. 
+Seaborn is a Python data visualization library based on matplotlib.
 It provides a high-level interface for drawing attractive and informative statistical graphics.
 
 ## Creating Interactive Widgets with ipywidgets

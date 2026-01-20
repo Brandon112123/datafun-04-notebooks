@@ -1,6 +1,6 @@
 # requirements.txt - list all the packages the project needs
 # Ignore hashes (#) - they are just used to create comments.
-# Hashes will be ignored when we install packages using this file. 
+# Hashes will be ignored when we install packages using this file.
 
 # ======================================================
 # STEP A - CREATE A LOCAL PROJECT VIRTUAL ENV (.venv)
@@ -9,7 +9,7 @@
 # Create your local project virtual environment
 # This step ensures you have an isolated Python environment for your project.
 # This is typically just done once at the beginning of a project.
-# If it gets messed up, we can delete .venv and recreate it at any time. 
+# If it gets messed up, we can delete .venv and recreate it at any time.
 
 # Run the following command to create a virtual environment in the project root.
 ### On Windows, Use PowerShell (not cmd) - don't include the #:
@@ -18,16 +18,16 @@
 ### On Mac/Linux, Use zsh or bash (or PowerShell) - don't include the #:
 # python3 -m venv .venv
 
-### If VS Code asks: We noticed a new environment has been created. 
+### If VS Code asks: We noticed a new environment has been created.
 # Do you want to select it for the workspace folder?
-# Click Yes. 
+# Click Yes.
 
 # ======================================================
 # STEP B - ALWAYS ACTIVATE THE (.venv) WHEN OPENING A NEW TERMINAL
 # ======================================================
 
 # ALWAYS activate the .venv before working on the project.
-# Activate whenever you open a new terminal. 
+# Activate whenever you open a new terminal.
 
 ### Windows PowerShell Command (don't include the #):
 # .\.venv\Scripts\activate
@@ -46,8 +46,8 @@
 # Install necessary packages listed below with this command:
 # Keep packages updated with the most recent versions.
 
-# When you identify a new package you want to use, 
-# Just update the list below and re-run this command. 
+# When you identify a new package you want to use,
+# Just update the list below and re-run this command.
 
 ### Windows Commands (don't include the #):
 # py -m pip install --upgrade pip setuptools wheel
@@ -57,8 +57,8 @@
 # python3 -m pip install --upgrade pip setuptools wheel
 # python3 -m pip install --upgrade -r requirements.txt
 
-# When you identify a new package you want to use, 
-# Just update the list below and re-run the install command. 
+# When you identify a new package you want to use,
+# Just update the list below and re-run the install command.
 
 # ======================================================
 # Step D: VS CODE- Select Interpreter
@@ -70,7 +70,7 @@
 # 3. Type Python: Select Interpreter in the Command Palette search bar and select it from the dropdown.
 # 4. Choose an Interpreter - A list of available Python environments will appear.
 #    Look for the local .venv option.
-# 5. Once selected, check the Python version displayed 
+# 5. Once selected, check the Python version displayed
 #    in the bottom-left corner of the VS Code window in the status bar.
 
 # ======================================================
@@ -133,7 +133,7 @@ matplotlib  # the foundation
 seaborn     # built on top of matplotlib
 
 # general-purpose interactivity library
-ipywidgets  
+ipywidgets
 
 # Scientific computing and machine learning
 # scipy
@@ -156,9 +156,8 @@ ipywidgets
 # imageio
 
 # ======================================================
-# WEB SCRAPING 
+# WEB SCRAPING
 # ======================================================
 
 # Web scraping
 # beautifulsoup4
-

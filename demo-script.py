@@ -1,21 +1,22 @@
 '''
-Optional: This is just an experiment to see how close we can get with a script. 
+Optional: This is just an experiment to see how close we can get with a script.
 '''
 
 #####################################
 # Import Modules at the Top
 #####################################
 
+from IPython.display import display  # used for display of widgets
+import ipywidgets as widgets  # interactive widgets
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
-import ipywidgets as widgets  # interactive widgets
-from IPython.display import display  # used for display of widgets
 
 #####################################
 # Chart Functions
 #####################################
+
 
 def plot_scatter_plot(penguins_df: pd.DataFrame):
     """Create and display a scatter plot for the Penguins dataset."""
@@ -46,15 +47,21 @@ def create_interactive_histogram():
     # Function to plot the histogram
     def plot_histogram(count_of_bins: int = 10):
         fig, ax = plt.subplots(figsize=(8, 5))
-        ax.hist(sample_data_array, bins=count_of_bins, color="skyblue", edgecolor="black")
-        ax.set_title("Chart 3. Interactive Histogram (use slider to change number of bins)")
+        ax.hist(
+            sample_data_array, bins=count_of_bins, color="skyblue", edgecolor="black"
+        )
+        ax.set_title(
+            "Chart 3. Interactive Histogram (use slider to change number of bins)"
+        )
         ax.set_xlabel("Value")
         ax.set_ylabel("Frequency")
         ax.grid(axis="y", linestyle="--", alpha=0.7)
         plt.show()
 
     # Create an interactive slider
-    bins_slider = widgets.IntSlider(value=10, min=5, max=50, step=1, description="Bins:")
+    bins_slider = widgets.IntSlider(
+        value=10, min=5, max=50, step=1, description="Bins:"
+    )
     interactive_hist = widgets.interactive(plot_histogram, count_of_bins=bins_slider)
     display(bins_slider, interactive_hist)
 
@@ -62,6 +69,7 @@ def create_interactive_histogram():
 #####################################
 # Main Execution
 #####################################
+
 
 def main():
     # Chart 1 - Scatter Plot
